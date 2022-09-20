@@ -3,8 +3,15 @@
  * @author Seu Nome
  */
 
-/* Smartphone Portrait */
+ /*layout*/
+ .flexfooter { 
+  display: flex;
+  flex-direction: column-reverse;
+ }
 
+ #social {margin-bottom: 25px;}
+
+/* Smartphone Portrait */
 /*
 body {
   background-color: #00ffff;
@@ -21,9 +28,20 @@ footer{
 
 /* Smartphone Landscape */
 @media (min-width: 576px) {
+  /*
   body {
     background-color: #ff0;
   }
+  */
+
+  /*rodapé*/
+  .flexfooter{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
 }
 
 /* Tablet Portrait */
